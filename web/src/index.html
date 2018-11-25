@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Nutanix Services</title>
+        <link rel="stylesheet" href="./css/style.css" />
+        <script type="text/javascript" src="./js/jquery-3.2.1.js"></script>
+        <script type="text/javascript" src="./js/data.js"></script>
+    </head>
+    <body onload="getNodeInfo()">
+        <h1>
+            <b>Calm Demo Web App</b>
+            <img width="400" src="./images/Nutanix-neg.png" align="right">
+        </h1>
+        <h3>
+            <b>Web Server Info</b><br/>
+            IP Address: WEB_IP_ADDRESS<br/>
+            Host Name: WEB_SERVER_NAME<br/>
+        </h3>
+        <h3 id="nodeInfo"></h3>
+        <div id="content">
+            <div style="width: 100%; overflow: hidden;">
+                <div id="leftbox">
+                    <input type="text" id="searchText">
+                    <select id="searchCriteria">
+                        <option value="rank">Rank</option>
+                        <option value="peak">Peak</option>
+                        <option value="state">State</option>
+                        <option value="range">Range</option>
+                    </select>
+                    <button class="button searchButton" id="searchdata">
+                    <img class="search-glass" width="14" height="14" src="./images/search.png"></button>
+                    <div id="demobox"> 
+                    </div> 
+                </div>
+                <div id="rightbox">
+                    <br/><br/>
+                    <div id="databox"> 
+                        <table align="center" cellpadding="5">
+                            <tr height="10"></tr>
+                            <tr>
+                                <td><font color="#fff">Rank</font></td><td><input type="text" id="rankText"></td>
+                            </tr>
+                            <tr>
+                                <td><font color="#fff">Peak</font></td><td><input type="text" id="peakText"></td>
+                            </tr>
+                            <tr>
+                                <td><font color="#fff">Elevation</font></td><td><input type="text" id="elevationText"></td>
+                            </tr>
+                            <tr>
+                                <td><font color="#fff">State</font></td><td><input type="text" id="stateText"></td>
+                            </tr>
+                            <tr>
+                                <td><font color="#fff">Range</font></td><td><input type="text" id="rangeText"></td>
+                            </tr>
+                            <tr>
+                                <td></td><td align="right"><button id="addcontent">Add Data</button></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
